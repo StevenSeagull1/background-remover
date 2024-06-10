@@ -3,7 +3,7 @@ Voor als je geen Rust begrijpt, raad ik aan om hier even te kijken: [Rust Book](
 
 De bedoeling is om een algoritme te maken om achtergronden weg te halen. Hier zijn twee verschillende manieren uitgekomen met elk andere resultaten. Hij is nog niet af, maar ik ben zover gekomen:
 
-De lege foto die ik gebruik in de twee methodes voor de vergelijking:
+De lege foto die ik gebruik in de twee methodes voor de vergelijking:<br>
 <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/62ce727d-7be8-4caf-b5cd-1421689f4a90" alt="leeg01" style="width: 50%; height: auto;">
 
 ## Pixelkleuren vergelijken:
