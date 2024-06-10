@@ -3,8 +3,9 @@ een hele simpele half afgemaakte background remover in rust:
 overlap:
 in overlap worden 2 fotos met elkaar vergeleken. 1 waarin er mensen zijn 1 waarin het leeg is.
 hierbij wordt het gene wat opelkaar lijkt weg gehaald en alles wat anders is blijft.
-![selfie02](https://github.com/StevenSeagull1/background-remover/assets/87282545/697ca923-4000-4f1a-82dc-049290d022e0 =250x250)
-![poging3](https://github.com/StevenSeagull1/background-remover/assets/87282545/9a55120a-9d0e-4438-869d-47e65fc6c47d | width=100)
+<img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/697ca923-4000-4f1a-82dc-049290d022e0" alt="selfie02" width="250" height="250">
+<img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/9a55120a-9d0e-4438-869d-47e65fc6c47d" alt="poging3" width="100">
+
 
 
 verhouding:
