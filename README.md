@@ -1,5 +1,5 @@
 Een hele simpele half afgemaakte background remover in Rust.
-Voor als je geen Rust begrijpt, raad ik aan om hier even te kijken: Rust Book
+Voor als je geen Rust begrijpt, raad ik aan om hier even te kijken: [Rust Book](https://doc.rust-lang.org/book/)
 
 De bedoeling is om een algoritme te maken om achtergronden weg te halen. Hier zijn twee verschillende manieren uitgekomen met elk andere resultaten. Hij is nog niet af, maar ik ben zover gekomen:
 
