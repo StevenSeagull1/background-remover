@@ -18,5 +18,5 @@ Hier is een voorbeeld:<br>
 Bij verhouding gebeurt het net iets anders. Hier worden ook de foto's vergeleken, maar er wordt gekeken naar of de verhouding erg verandert. hier worden eerst de verschillen tussen de r, g en b apart gehaald. daarna worden de verschillen bij elkaar berekend en dan vervolgens gedeeld door 3 voor het gemmidelde. als dit gemmidelde te veel afwijkt van het origineel dan wordt de pixel weg gehaald. Op deze manier kun je ervoor zorgen dat als er een groot verschil is in belichting, er niks verandert aan het algoritme. Hier is een voorbeeld:<br>
 <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/697ca923-4000-4f1a-82dc-049290d022e0" alt="selfie02" style="width: 50%; height: auto;"> <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/7f765461-654a-41ca-a979-0cc570ddc27b" alt="poging4" style="width: 50%; height: auto;">
 
-TODO:
+Conclusie Kleurverhouding vergelijken:
 Het probleem hiermee is dat je dan het probleem krijgt dat hele lage waardes die donker zijn in de weg gaan zitten. Hiervoor zou nu nog een oplossing bedacht moeten worden. Een idee zou zijn om alle lage waardes te negeren.
