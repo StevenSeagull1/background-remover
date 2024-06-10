@@ -1,4 +1,5 @@
 een hele simpele half afgemaakte background remover in rust.
+voor als je geen rust begrijpt raad ik aan om hier even te kijken: https://doc.rust-lang.org/book/
 bedoeling is om een algoritme te maken om achtegronden weg te halen hier zijn 2 verschillende manieren uitgekomen met elk andere resultaten.
 hij is nog niet af maar ik ben zover gekomen:
 
