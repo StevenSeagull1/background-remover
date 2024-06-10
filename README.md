@@ -1,4 +1,6 @@
-een hele simpele half afgemaakte background remover in rust:
+een hele simpele half afgemaakte background remover in rust.
+bedoeling is om een algoritme te maken om achtegronden weg te halen hier zijn 2 verschillende manieren uitgekomen met elk andere resultaten.
+hij si nog niet af maar ik ben zover gekomen:
 
 overlap:
 in overlap worden 2 fotos met elkaar vergeleken. 1 waarin er mensen zijn 1 waarin het leeg is.
