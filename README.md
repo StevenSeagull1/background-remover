@@ -10,7 +10,7 @@ De lege foto die ik gebruik in de twee methodes voor de vergelijking:<br>
 
 ## Pixelkleuren vergelijken:
 Bij Pixelkleuren vergelijken worden twee foto’s met elkaar vergeleken: één waarin er mensen zijn en één waarin het leeg is. Hierbij wordt wat op elkaar lijkt weggehaald en alles wat anders is blijft.
-Het probleem met overlap is nu nog dat belichting een te grote impact heeft en voor problemen kan zorgen. Hiervoor is "verhouding" gemaakt. 
+Het probleem met overlap is nu nog dat belichting een te grote impact heeft en voor problemen kan zorgen. Hiervoor is "Kleurverhouding vergelijken" gemaakt. 
 Hier is een voorbeeld:<br>
 <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/697ca923-4000-4f1a-82dc-049290d022e0" alt="selfie02" style="width: 50%; height: auto;"> <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/9a55120a-9d0e-4438-869d-47e65fc6c47d" alt="poging3" style="width: 50%; height: auto;">
 
