@@ -1,9 +1,7 @@
 use image::{DynamicImage, GenericImageView, Rgba};
 use std::path::Path;
 use image::GenericImage;
-use image::RgbaImage;
-const TOLERANCE:u8 = 25;
-const TOLERANCE_BLACK:i16 = 50;
+
 // alle foto's openen en verwerken door de functies
 // tot slot de bewerkte foto opslaan
 fn main() {
@@ -65,6 +63,7 @@ fn process_squares(output_image: &mut DynamicImage, reference_image:
         }
     }
 }
+
 //vanaf hier gaat hij per blok kijken
 fn process_square(output_image: &mut DynamicImage, reference_image: 
     &DynamicImage, width: u32, height: u32, 
@@ -88,6 +87,7 @@ fn process_square(output_image: &mut DynamicImage, reference_image:
             }
         }
     }
+
 //als de helft van een blok ongeveer hetzeflde is wordt deze helemaal wit
 //zo niet gaat er per sub square binnen in gekeken worden
     let ratio = similar_pixel_count as f32 / total_pixels as f32;
@@ -105,6 +105,7 @@ fn process_square(output_image: &mut DynamicImage, reference_image:
             sub_square_width, sub_square_height);
     }
 }
+
 //hier word hetzelfde gedaan als hierboven alle pixels die op elkaar lijken
 //worden geteld.
 fn process_sub_squares(output_image: &mut DynamicImage, reference_image:
@@ -127,6 +128,7 @@ fn process_sub_squares(output_image: &mut DynamicImage, reference_image:
             }
         }
     }
+
     //als het blok 50% hetzelfde is dan wordt het wit gemaakt
     let ratio = similar_pixel_count as f32 / total_pixels as f32;
     if ratio > 0.5 {
@@ -138,6 +140,7 @@ fn process_sub_squares(output_image: &mut DynamicImage, reference_image:
             }
         }
     }
+
     for sub_i in 0..5 {
         for sub_j in 0..5 {
             let sub_x_start = x_start + sub_i * sub_square_width;
@@ -188,6 +191,7 @@ fn process_sub_squares(output_image: &mut DynamicImage, reference_image:
         }
     }
 }
+
 //hier wordt berekend wat het verschil is tussen de pixels tussen de 2 foto's 
 //als het verschil is dan de tolerance dan wordt er een false teruggestuurd
 fn pixels_are_similar(pixel1: [u8; 4], pixel2: [u8; 4], tolerance: u8) -> bool {

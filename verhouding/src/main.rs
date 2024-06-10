@@ -1,11 +1,11 @@
-use image::{DynamicImage, GenericImageView, Rgba};
-use std::path::Path;
-use image::GenericImage;
+//imports van image crate
+use image::{DynamicImage, GenericImageView};
 use image::RgbaImage;
 const TOLERANCE:u8 = 25;
-const TOLERANCE_BLACK:i16 = 50;
 
-
+// bereken het verschil.
+// als het verschil te hoog is dan niet wit maken
+// als het verschil te klein is wel wit maken
 fn pixels_are_similar1(pixel1: [u8; 4], pixel2: [u8; 4], tolerance: u8) -> bool {
     let r_diff = (pixel1[0] as i16 - pixel2[0] as i16).abs();
     let g_diff = (pixel1[1] as i16 - pixel2[1] as i16).abs();
@@ -15,6 +15,8 @@ fn pixels_are_similar1(pixel1: [u8; 4], pixel2: [u8; 4], tolerance: u8) -> bool 
     tolerance as i16
 }
 
+//berekening voor het gemmidelde
+//als de pixle erg donker is moet het anders
 fn pixels_are_similar2(pixel1: [u8; 4], pixel2: [u8; 4]) -> bool {
     let r1 = pixel1[0]  as f32 + 10.0;
     let g1 = pixel1[1]  as f32 + 10.0;
@@ -31,15 +33,16 @@ fn pixels_are_similar2(pixel1: [u8; 4], pixel2: [u8; 4]) -> bool {
         return same
     }
      
-    let Av = 1.0;
-    let x = ((r1 / r2 - Av).abs() + (g1 / g2 - Av).abs() + (b1 / b2 - Av).abs()) / 3.0;
+    let av = 1.0;
+    let x = ((r1 / r2 - av).abs() + (g1 / g2 - av).abs() + (b1 / b2 - av).abs()) / 3.0;
     let tolerance = 0.5;
 
      x <= tolerance
 }
 
+//loop functie die de functies gebruikt en de uitkomsten toepast
 fn remove_background(base_image: &DynamicImage, comparison_image: 
-    &DynamicImage, tolerance: f32) -> RgbaImage {
+    &DynamicImage, _tolerance: f32) -> RgbaImage {
     let (width, height) = base_image.dimensions();
     let mut output = RgbaImage::new(width, height);
 
@@ -47,8 +50,6 @@ fn remove_background(base_image: &DynamicImage, comparison_image:
         for x in 0..width {
             let base_pixel = base_image.get_pixel(x, y).0;
             let comparison_pixel = comparison_image.get_pixel(x, y).0;
-            // let result = pixels_are_similar2(base_pixel, comparison_pixel);
-            // println!("{}", result);
             if pixels_are_similar2(base_pixel, comparison_pixel) {
 
                 output.put_pixel(x, y, base_image.get_pixel(x, y));
@@ -59,6 +60,7 @@ fn remove_background(base_image: &DynamicImage, comparison_image:
     output
 }
 
+//main functie
 fn main() {
     let base_image = image::open("selfies/selfie02.png").unwrap();
     let comparison_image = image::open("selfies/leeg01.png").unwrap();
