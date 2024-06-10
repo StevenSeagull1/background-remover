@@ -9,7 +9,9 @@ De lege foto die ik gebruik in de twee methodes voor de vergelijking:<br>
 <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/62ce727d-7be8-4caf-b5cd-1421689f4a90" alt="leeg01" style="width: 50%; height: auto;">
 
 ## Pixelkleuren vergelijken:
-Bij Pixelkleuren vergelijken worden twee foto’s met elkaar vergeleken: één waarin er mensen zijn en één waarin het leeg is. Hierbij wordt wat op elkaar lijkt weggehaald en alles wat anders is blijft. Hier is een voorbeeld:<br>
+Bij Pixelkleuren vergelijken worden twee foto’s met elkaar vergeleken: één waarin er mensen zijn en één waarin het leeg is. Hierbij wordt wat op elkaar lijkt weggehaald en alles wat anders is blijft.
+Het probleem met overlap is nu nog dat belichting een te grote impact heeft en voor problemen kan zorgen. Hiervoor is "verhouding" gemaakt. 
+Hier is een voorbeeld:<br>
 <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/697ca923-4000-4f1a-82dc-049290d022e0" alt="selfie02" style="width: 50%; height: auto;"> <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/9a55120a-9d0e-4438-869d-47e65fc6c47d" alt="poging3" style="width: 50%; height: auto;">
 
 ## Kleurverhouding vergelijken:
@@ -17,4 +19,4 @@ Bij verhouding gebeurt het net iets anders. Hier worden ook de foto's vergeleken
 <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/697ca923-4000-4f1a-82dc-049290d022e0" alt="selfie02" style="width: 50%; height: auto;"> <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/7f765461-654a-41ca-a979-0cc570ddc27b" alt="poging4" style="width: 50%; height: auto;">
 
 TODO:
-Het probleem met overlap is nu nog dat belichting een te grote impact heeft en voor problemen kan zorgen. Hiervoor is "verhouding" gemaakt. Het probleem hiermee is dat je dan het probleem krijgt dat hele lage waardes die donker zijn in de weg gaan zitten. Hiervoor zou nu nog een oplossing bedacht moeten worden. Een idee zou zijn om alle lage waardes te negeren.
+Het probleem hiermee is dat je dan het probleem krijgt dat hele lage waardes die donker zijn in de weg gaan zitten. Hiervoor zou nu nog een oplossing bedacht moeten worden. Een idee zou zijn om alle lage waardes te negeren.
