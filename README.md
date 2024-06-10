@@ -1,8 +1,8 @@
 Een hele simpele half afgemaakte background remover in Rust.
 Voor als je geen Rust begrijpt, raad ik aan om hier even te kijken: [Rust Book](https://doc.rust-lang.org/book/)
 
-De bedoeling is om een algoritme te maken om achtergronden weg te halen. Hier zijn twee verschillende manieren uitgekomen met elk andere resultaten. De 2 manieren hebben wel 1 ding allebei.
-dat is dat de foto altijd word vergeleken met een lege foto. Zo kan het algoritme zien waar de mensen zijn en alles wat ongeveer hetzelfde is weg halen.
+De bedoeling is om een algoritme te maken om achtergronden weg te halen. Hier zijn twee verschillende manieren uitgekomen met elk andere resultaten. De 2 manieren hebben wel 1 ding gemeen.
+Dat is dat de foto altijd word vergeleken met een lege foto. Zo kan het algoritme zien waar de mensen zijn en alles wat ongeveer hetzelfde is weg halen.
 Hij is nog niet af, maar ik ben zover gekomen:
 
 De lege foto die ik gebruik in de twee methodes voor de vergelijking:<br>
