@@ -3,11 +3,11 @@ Voor als je geen Rust begrijpt, raad ik aan om hier even te kijken: [Rust Book](
 
 De bedoeling is om een algoritme te maken om achtergronden weg te halen. Hier zijn twee verschillende manieren uitgekomen met elk andere resultaten. Hij is nog niet af, maar ik ben zover gekomen:
 
-De lege foto die ik gebruik in de twee methodes voor de vergelijking:<br>
+De lege foto die ik gebruik in de twee methodes voor de vergelijking:
 <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/62ce727d-7be8-4caf-b5cd-1421689f4a90" alt="leeg01" style="width: 50%; height: auto;">
 
 ## Pixelkleuren vergelijken:
-Bij overlap worden twee foto’s met elkaar vergeleken: één waarin er mensen zijn en één waarin het leeg is. Hierbij wordt wat op elkaar lijkt weggehaald en alles wat anders is blijft. Hier is een voorbeeld:<br>
+Bij Pixelkleuren vergelijken worden twee foto’s met elkaar vergeleken: één waarin er mensen zijn en één waarin het leeg is. Hierbij wordt wat op elkaar lijkt weggehaald en alles wat anders is blijft. Hier is een voorbeeld:<br>
 <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/697ca923-4000-4f1a-82dc-049290d022e0" alt="selfie02" style="width: 50%; height: auto;"> <img src="https://github.com/StevenSeagull1/background-remover/assets/87282545/9a55120a-9d0e-4438-869d-47e65fc6c47d" alt="poging3" style="width: 50%; height: auto;">
 
 ## Kleurverhouding vergelijken:
