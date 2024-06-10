@@ -2,7 +2,7 @@ een hele simpele half afgemaakte background remover in rust.
 bedoeling is om een algoritme te maken om achtegronden weg te halen hier zijn 2 verschillende manieren uitgekomen met elk andere resultaten.
 hij is nog niet af maar ik ben zover gekomen:
 
-de lege foto die ik gebruik in de 2 manieren:
+de lege foto die ik gebruik in de 2 manieren:<br>
 <img src= "https://github.com/StevenSeagull1/background-remover/assets/87282545/62ce727d-7be8-4caf-b5cd-1421689f4a90" alt="leeg01" style="width: 50%; height: auto;">
 
 
